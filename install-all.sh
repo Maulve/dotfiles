@@ -1,22 +1,26 @@
-source .install/required.sh
+source $PWD/.install/includes/colors.sh
+source $PWD/.install/includes/library.sh
 
-source .install/confirm-start.sh
 
-source .install/packages/general-packages.sh
+source $PWD/.install/required.sh
+
+source $PWD/.install/confirm-start.sh
+
+source $PWD/.install/packages/general-packages.sh
 echo "Installing general packages now..."
-source .install/install-packages.sh
+source $PWD/.install/install-packages.sh
 
-source .install/packages/hyprland-packages.sh
+source $PWD/.install/packages/hyprland-packages.sh
 echo "Installing hyprland packages now..."
-source .install/install-packages.sh
+source $PWD/.install/install-packages.sh
 
-source .install/wallpaper.sh
+source $PWD/.install/wallpaper.sh
 
-source .install/hyprland-dotfiles.sh
+source $PWD/.install/hyprland-dotfiles.sh
 
-source .install/gtk.sh
+source $PWD/.install/gtk.sh
 
 # add .zshrc
-source .install/cleanup.sh
-source .install/reboot.sh
+source $PWD/.install/cleanup.sh
+source $PWD/.install/reboot.sh
 sleep 3
