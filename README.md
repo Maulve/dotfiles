@@ -1,4 +1,4 @@
-# Welcome to the hyprland part of my dotfiles!
+# Welcome to my dotfiles!
 
 It aims to make configuration more streamlined and direct. (personally I find this easier to manage)
 Furthermore, it removes stuff I don't need / like.
