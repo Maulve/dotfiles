@@ -2,7 +2,6 @@ packagesPacman=(
     "hyprland"
     "xdg-desktop-portal-hyprland" 
     "waybar"
-    "swappy" # snapshot editing tool
     "cliphist" # clipboard manager
     "hyprlock"
     "hypridle"

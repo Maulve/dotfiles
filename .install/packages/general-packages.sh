@@ -45,10 +45,13 @@ packagesPacman=(
     "qalculate-gtk"
     "imagemagick"
     "neofetch"
+    "wayland"
+    "wayland-protocols"
+    "wayland-utils"
 );
 
 packagesYay=(
-    "bibata-cursor-theme" 
+    "bibata-cursor-theme" #TODO: change cursor theme
     "pacseek" # terminal user interface for arch packages, might remove
     "rofi-lbonn-wayland" # rofi fork with wayland support
 );

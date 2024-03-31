@@ -7,6 +7,7 @@
 #                   |_|         |_|               
 #  
 # by Stephan Raabe (2023) 
+# Source: https://gitlab.com/stephan-raabe/dotfiles/-/blob/main/hypr/scripts/wallpaper.sh
 # ----------------------------------------------------- 
 
 # Cache file for holding the current wallpaper
