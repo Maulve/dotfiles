@@ -1,7 +1,6 @@
 #!/bin/bash
 
-
-# set theme, must be folder name
+# Set a theme, must be folder name in waybar/themes
 theme="default"
 
 # ------------------------------------
