@@ -44,10 +44,10 @@ packagesPacman=(
     "xdg-desktop-portal"
     "qalculate-gtk"
     "imagemagick"
+    "neofetch"
 );
 
 packagesYay=(
-    "pfetch" # system information
     "bibata-cursor-theme" 
     "pacseek" # terminal user interface for arch packages, might remove
     "rofi-lbonn-wayland" # rofi fork with wayland support
