@@ -1,4 +1,7 @@
 packagesPacman=(
+    "git"
+    "wget"
+    "unzip"
     "pacman-contrib"
     "nano"
     "bluez" # bluetooth
