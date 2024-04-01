@@ -16,4 +16,5 @@ packagesPacman=(
 packagesYay=(
     "github-desktop-bin"
     "onlyoffice-bin"
+    "libresprite"
 )
