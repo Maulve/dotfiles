@@ -7,6 +7,9 @@ source $PWD/.install/confirm-start.sh
 
 cp $PWD ~/dotfiles
 
+echo "Installed to directory. Starting now..."
+sleep 3
+
 source $PWD/.install/zsh-setup.sh
 
 source $PWD/.install/packages/general-packages.sh
