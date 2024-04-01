@@ -17,6 +17,11 @@ source $PWD/.install/packages/hyprland-packages.sh
 echo "Installing hyprland packages now..."
 source $PWD/.install/install-packages.sh
 
+if gum confirm "Do you want to install additional packages?"; then
+    source $PWD/.install/packages/additional-packages.sh
+    source $PWD/.install/install-packages.sh
+fi
+
 source $PWD/.install/wallpaper.sh
 
 source $PWD/.install/hyprland-dotfiles.sh
