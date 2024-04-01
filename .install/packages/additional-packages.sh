@@ -10,6 +10,7 @@ packagesPacman=(
     "obsidian"
     "godot"
     "thunderbird"
+    "bitwarden"
 )
 
 packagesYay=(
