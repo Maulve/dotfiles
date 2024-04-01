@@ -24,5 +24,5 @@ Furthermore, it removes / changes stuff I don't need / like.
 - Browser: Firefox
 - Screenshots: hyprshot
 
-- Maulve (2024)
+Maulve (2024)
 https://github.com/Maulve/dotfiles
