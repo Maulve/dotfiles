@@ -1,10 +1,9 @@
 # TODO
 
-- finalize hypr/conf/keybind.conf // high
 - change screenshot tool // med
-- remove/change "random" option in hypr/scripts/wallpaper // low
-- find dropdown terminal // high
+- find dropdown terminal // high; done: https://github.com/hyprwm/contrib/tree/main/hdrop
 - add credit where due // low
-- add .zshrc // high
 - change cursor theme // med
 - add wallpapers // low
+
+- add install for additional software // high

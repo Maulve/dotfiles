@@ -1,7 +1,6 @@
 source $PWD/.install/includes/colors.sh
 source $PWD/.install/includes/library.sh
 
-
 source $PWD/.install/required.sh
 
 source $PWD/.install/confirm-start.sh
