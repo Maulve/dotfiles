@@ -54,7 +54,7 @@ packagesPacman=(
 );
 
 packagesYay=(
-    "bibata-cursor-theme" #TODO: change cursor theme
-    "pacseek" # terminal user interface for arch packages, might remove
+    "xcursor-simp1e-catpuccin-mocha"
+    "pacseek" # terminal user interface for arch packages
     "rofi-lbonn-wayland" # rofi fork with wayland support
 );
