@@ -1,1 +1,1 @@
-swww-daemon &
+swww init
