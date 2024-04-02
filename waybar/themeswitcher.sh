@@ -16,34 +16,26 @@ themes_path="$HOME/dotfiles/waybar/themes"
 # ----------------------------------------------------- 
 # Initialize arrays
 # ----------------------------------------------------- 
-listThemes=()
 listNames=()
 
 # ----------------------------------------------------- 
 # Read theme folder
 # -----------------------------------------------------
-sleep 0.2 
+#sleep 0.2
 
-options=$(find $themes_path -maxdepth 1 -type d)
-for value in $options
-do
-    if [ ! $value == "$themes_path" ]; then
-        listThemes+=("$value")
-        listNames+=("$(basename $value)")
-    fi
-done
+list=($(ls ~/dotfiles/waybar/themes))
 
 # ----------------------------------------------------- 
 # Show rofi dialog
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 
-choice=$(echo -e "$listNames" | rofi -dmenu -replace -i -config ~/dotfiles/rofi/config-themes.rasi -no-show-icons -width 30 -p "Themes" -format i)
+choice=$(ls ~/dotfiles/waybar/themes | rofi -dmenu -replace -i -config ~/dotfiles/rofi/config-themes.rasi -no-show-icons -width 30 -p "Themes" -format i)
 
 # ----------------------------------------------------- 
 # Set new theme by writing the theme information to ~/.cache/.themestyle.sh
 # ----------------------------------------------------- 
 if [ "$choice" ]; then
     echo "Loading waybar theme..."
-    echo "${listThemes[$choice+1]}" > ~/.cache/.themestyle.sh
+    echo "${list[$choice]}" > ~/.cache/.themestyle.sh
     ~/dotfiles/waybar/launch.sh
 fi

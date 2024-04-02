@@ -77,23 +77,10 @@ echo ":: Wallpaper: $wallpaper"
 newwall=$(echo $wallpaper | sed "s|$HOME/wallpaper/||g")
 
 # ----------------------------------------------------- 
-# Reload waybar with new colors
-# -----------------------------------------------------
-~/dotfiles/waybar/launch.sh
-
-# ----------------------------------------------------- 
 # Set the new wallpaper
 # -----------------------------------------------------
-transition_type="wipe"
-# transition_type="outer"
-# transition_type="random"
 
-swww img $wallpaper \
-    --transition-bezier .43,1.19,1,.4 \
-    --transition-fps=60 \
-    --transition-type=$transition_type \
-    --transition-duration=0.7 \
-    --transition-pos "$( hyprctl cursorpos )"
+plasma-apply-wallpaperimage $wallpaper
 
 if [ "$1" == "init" ] ;then
     echo ":: Init"

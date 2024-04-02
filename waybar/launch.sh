@@ -8,7 +8,7 @@ theme="default"
 killall waybar
 pkill waybar
 sleep 0.2
-
+#exit 1
 # ------------------------------------
 # Get current theme info from ~/.cache/.themestyle.sh
 
