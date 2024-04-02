@@ -1,3 +1,7 @@
+echo "This script is currently broken."
+
+exit 1
+
 source $PWD/.install/includes/colors.sh
 source $PWD/.install/includes/library.sh
 
