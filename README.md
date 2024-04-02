@@ -1,6 +1,6 @@
 # Welcome to my dotfiles!
 
-**WARNING: using install.sh is NOT intended to be used with an existing install. It WILL delete a lot of your config files.**
+**WARNING: DO NOT USE install.sh. It is currently BROKEN and will DELETE your existing configs.**
 
 These dotfiles are a heavily modified version of ML4W's dotfiles
 https://gitlab.com/stephan-raabe/dotfiles
