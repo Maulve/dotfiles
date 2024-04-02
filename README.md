@@ -13,7 +13,6 @@ Furthermore, it removes / changes stuff I don't need / like.
 - WM: Hyprland
 - Shell: zsh
 - Terminal: Alacritty
-- Prompt: starship
 - Bar: waybar
 - Notifications: dunst
 - Editor: nano & Kate
