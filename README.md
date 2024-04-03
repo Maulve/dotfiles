@@ -15,11 +15,11 @@ Furthermore, it removes / changes stuff I don't need / like.
 - Terminal: Alacritty
 - Bar: waybar
 - Notifications: dunst
-- Editor: nano, Sublime Text
+- Editor: micro, Sublime Text
 - Login Manager: SDDM
 - Launch Menus: rofi (Wayland fork)
 - Colorschemes: pywal
-- File Manager: Thunar
+- File Manager: Thunar, ranger
 - Browser: Firefox
 - Screenshots: hyprshot
 
