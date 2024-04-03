@@ -15,7 +15,7 @@ Furthermore, it removes / changes stuff I don't need / like.
 - Terminal: Alacritty
 - Bar: waybar
 - Notifications: dunst
-- Editor: nano & Kate
+- Editor: nano, Sublime Text
 - Login Manager: SDDM
 - Launch Menus: rofi (Wayland fork)
 - Colorschemes: pywal
