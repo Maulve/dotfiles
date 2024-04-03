@@ -2,7 +2,7 @@
 
 **WARNING: DO NOT USE install.sh. It is currently BROKEN and will DELETE your existing configs.**
 
-These dotfiles are a heavily modified version of ML4W's dotfiles
+These dotfiles are a heavily modified version of the ML4W dotfiles
 https://gitlab.com/stephan-raabe/dotfiles
 
 It aims to make configuration more streamlined and direct. (personally I find this easier to manage)
