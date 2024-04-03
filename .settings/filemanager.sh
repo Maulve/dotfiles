@@ -1,1 +1,1 @@
-thunar
+alacritty -e ranger
