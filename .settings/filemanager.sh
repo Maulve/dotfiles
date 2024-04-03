@@ -1,1 +1,1 @@
-alacritty -e ranger
+kitty -e ranger
