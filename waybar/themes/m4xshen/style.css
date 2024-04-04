@@ -1,3 +1,5 @@
+@import "../../../../.cache/wal/colors-waybar.css";
+
 * {
   border: none;
   font-family: 'Fira Code', 'Symbols Nerd Font Mono';
@@ -11,10 +13,9 @@ window#waybar {
   padding-bottom: 10px;
 }
 
-#custom-arch, #workspaces, #custom-themes {
+#custom-arch, #workspaces, #custom-themes, #window, #tray {
   border-radius: 10px;
-  background-color: #11111b;
-  color: #b4befe;
+  background-color: @background;
   margin-top: 2px;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -23,25 +24,30 @@ window#waybar {
   padding-right: 10px;
 }
 
+#window {
+	color: @color2;
+}
+
 #custom-themes {
   font-size: 20px;
-  color: #b4befe;}
+  color: @foreground;
+}
 
 #custom-arch {
   font-size: 20px;
   margin-left: 15px;
-  color: #b4befe;
+  color: @color6;
 }
 
 #workspaces button {
-  background: #11111b;
-  color: #b4befe;
+  background: @background;
+  color: @color4;
 }
 
 #clock, #pulseaudio {
   border-radius: 10px;
-  background-color: #11111b;
-  color: #cdd6f4;
+  background-color: @background;
+  color: @color7;
   margin-top: 2px;
   padding-left: 10px;
   padding-right: 10px;

@@ -56,6 +56,8 @@ case $1 in
             echo "No wallpaper selected"
             exit
         fi
+		#selected=$(ls -p ~/wallpapers | grep -v / | rofi -dmenu -replace -i -config ~/dotfiles/rofi/config-wallpaper.rasi)
+        
         wal -q -i ~/wallpaper/$selected
     ;;
 
@@ -84,15 +86,15 @@ newwall=$(echo $wallpaper | sed "s|$HOME/wallpaper/||g")
 # ----------------------------------------------------- 
 # Set the new wallpaper
 # -----------------------------------------------------
-transition_type="wipe"
-# transition_type="outer"
+#transition_type="wipe"
+ transition_type="outer"
 # transition_type="random"
 
 swww img $wallpaper \
     --transition-bezier .43,1.19,1,.4 \
     --transition-fps=60 \
     --transition-type=$transition_type \
-    --transition-duration=0.7 \
+    --transition-duration=0.2 \
     --transition-pos "$( hyprctl cursorpos )"
 
 if [ "$1" == "init" ] ;then
