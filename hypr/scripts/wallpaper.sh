@@ -48,7 +48,7 @@ case $1 in
     # Select wallpaper with rofi
     "select")
         sleep 0.2
-        selected=$( find "$HOME/wallpaper" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -exec basename {} \; | sort -R | while read rfile
+        selected=$( find "$HOME/wallpaper" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) -exec basename {} \; | sort | while read rfile
         do
             echo -en "$rfile\x00icon\x1f$HOME/wallpaper/${rfile}\n"
         done | rofi -dmenu -i -replace -config ~/dotfiles/rofi/config-wallpaper.rasi)
@@ -86,16 +86,15 @@ newwall=$(echo $wallpaper | sed "s|$HOME/wallpaper/||g")
 # ----------------------------------------------------- 
 # Set the new wallpaper
 # -----------------------------------------------------
-#transition_type="wipe"
- transition_type="outer"
-# transition_type="random"
+
+transition_type="simple"
 
 swww img $wallpaper \
-    --transition-bezier .43,1.19,1,.4 \
+#    --transition-bezier .43,1.19,1,.4 \
     --transition-fps=60 \
     --transition-type=$transition_type \
-    --transition-duration=0.2 \
-    --transition-pos "$( hyprctl cursorpos )"
+    --transition-duration=0.2 # \
+#    --transition-pos "$( hyprctl cursorpos )"
 
 if [ "$1" == "init" ] ;then
     echo ":: Init"
