@@ -3,9 +3,6 @@ PROMPT='%{%F{5}%}%1~ %{%F{8}%}$ %{%F{7}%}'
 
 setopt histignorealldups sharehistory
 
-# Use emacs keybindings even if our EDITOR is set to vi
-bindkey -e
-
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
@@ -52,10 +49,18 @@ alias app="cd /home/maulve/Applications"
 alias gdp="cd /home/maulve/Godot/Projects"
 alias flp="cd \"/home/maulve/Documents/Image-Line/FL Studio/Projects\""
 alias obs="cd /home/maulve/Obsidian"
+alias dot="cd ~/dotfiles"
 
 # custom commands
 alias bgm="/home/maulve/Applications/scripts/bgm/start.sh"
-alias webui="cd "/home/maulve/stable-diffusion-webui" && ./webui.sh"
-alias comfy="python3 /home/maulve/ComfyUI/main.py --output-directory /home/maulve/ai/output/comfyui"
-alias fav="/home/maulve/Applications/scripts/fastfav/fastfav.sh"
-alias upd="sudo apt update -y && sudo apt upgrade -y"
+alias mouselock="sudo /home/maulve/Applications/scripts/mouse-lock/start.sh"
+alias webui="cd "/home/maulve/stable-diffusion-webui" && source ./venv/bin/activate && ./webui.sh"
+alias comfy="/home/maulve/ComfyUI/venv/bin/python /home/maulve/ComfyUI/main.py --output-directory /home/maulve/ai/output/comfyui"
+alias fav="go run /home/maulve/Applications/scripts/fastfav/fastfav.go"
+alias update="~/update.sh"
+alias logout="hyprctl dispatch exit"
+alias venv="source venv/bin/activate"
+alias rr="ranger"
+alias mr="micro"
+alias discord="firefox --new-window https://discord.com/channels/@me"
+alias zshrc="micro ~/.zshrc"
