@@ -2,10 +2,9 @@
 
 **WARNING: DO NOT USE install.sh. It is currently BROKEN and will DELETE your existing configs.**
 
-These dotfiles are a heavily modified version of the ML4W dotfiles
-https://gitlab.com/stephan-raabe/dotfiles
+These dotfiles are a heavily modified version of the [ML4W dotfiles](https://gitlab.com/stephan-raabe/dotfiles).
 
-It aims to make configuration more streamlined and direct. (personally I find this easier to manage)
+They aim to make configuration more streamlined and direct (I find this easier to manage).
 Furthermore, it removes / changes stuff I don't need / like.
 
 ## Main Packages
@@ -30,11 +29,14 @@ Sublime Text however is for bigger projects where I also require proper syntax h
 
 Although I am waiting for Zed to be ported to Linux, as I really love what I've seen of it so far.
 
+"Why not neovim, it's literally so much better!!"
+I have tried it out, and can't really wrap my head around the keybindings and just very different way of doing things.
+Maybe I'll give it another shot sometime, but currently I don't see myself using it.
+
 
 **Why two file managers?**
-Ranger is really great, but for example when I need to pick a file (for a program), Thunar is just better.
-(I don't know if ranger even can be a file picker)
-Additionally, sometimes having a GUI is nice for certain things.
+Ranger is really great, but for example when I need move files around I have a much better time with Thunar.
+Though, Ranger is especially neat when navigating fast and just editing text files (mostly configs).
 
 
 Maulve (2024)
