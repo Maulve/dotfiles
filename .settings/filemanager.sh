@@ -1,1 +1,1 @@
-kitty -e ranger
+thunar

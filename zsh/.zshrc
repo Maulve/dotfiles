@@ -13,6 +13,8 @@ ZSH_CUSTOM=$HOME/.config/zsh/plugins
 
 source $ZSH_CUSTOM/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+eval "$(zoxide init --cmd cd zsh)"
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
