@@ -1,5 +1,7 @@
 # Welcome to my dotfiles!
 
+![desktop](./img/desktop.png)
+
 **WARNING: DO NOT USE install.sh. It is currently BROKEN and will DELETE your existing configs.**
 
 These dotfiles are a heavily modified version of the [ML4W dotfiles](https://gitlab.com/stephan-raabe/dotfiles).
