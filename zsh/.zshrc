@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # custom prompt
 PROMPT='%{%F{5}%}%1~ %{%F{8}%}$ %{%F{7}%}'
 
@@ -14,6 +21,10 @@ ZSH_CUSTOM=$HOME/.config/zsh/plugins
 source $ZSH_CUSTOM/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(zoxide init --cmd cd zsh)"
+
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+source $ZSH_CUSTOM/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Use modern completion system
 autoload -Uz compinit
@@ -66,3 +77,14 @@ alias rr="ranger"
 alias mr="micro"
 alias discord="firefox --new-window https://discord.com/channels/@me"
 alias zshrc="micro ~/.zshrc"
+alias lnhelp="echo 'For Directories:	ln -s <LINKING TO> <LINK LOCATION>\nFor Files:		ln -sf <LINKING TO> <LINK LOCATION>'"
+
+# fzf key bindings and fuzzy completions
+eval "$(fzf --zsh)"
+
+alias ls="eza --color=always --long --no-filesize --no-time --icons=always --no-user --no-permissions"
+
+export PATH="${PATH}:/home/maulve/.local/share/gem/ruby/3.0.0/bin"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

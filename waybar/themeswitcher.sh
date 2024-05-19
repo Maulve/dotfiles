@@ -29,7 +29,7 @@ list=($(ls ~/dotfiles/waybar/themes))
 # Show rofi dialog
 # -----------------------------------------------------
 
-choice=$(ls ~/dotfiles/waybar/themes | rofi -dmenu -replace -i -config ~/dotfiles/rofi/config-themes.rasi -no-show-icons -width 30 -p "Themes" -format i)
+choice=$(ls ~/dotfiles/waybar/themes | wofi --dmenu -p "Themes")
 
 # ----------------------------------------------------- 
 # Set new theme by writing the theme information to ~/.cache/.themestyle.sh

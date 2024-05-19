@@ -1,0 +1,41 @@
+@define-color border #816EBC;
+@define-color background rgba(0,0,0,0.5);
+@define-color accent #9082BD;
+@define-color highlight #8461B0;
+
+window {
+margin: 5px;
+border: 4px solid @border;
+border-radius: 4px;
+background-color: transparent;
+font-family:"Fira Code Semibold";
+}
+
+#input {
+	color: transparent;
+	margin: 5px;
+	border: none;
+	background-color: transparent;
+}
+
+#inner-box {
+margin: 5px;
+background-color: @background;
+}
+
+#outer-box {
+margin: 5px;
+background-color: @background;
+}
+
+#text {
+margin: 5px;
+}
+
+#text:selected {
+color: black;
+}
+
+#entry:selected {
+background-color: @highlight;
+}

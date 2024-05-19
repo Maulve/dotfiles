@@ -1,0 +1,43 @@
+{
+  "layer": "top",
+    "modules-left": ["custom/themes", "tray", "hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "clock", "custom/arch"],
+    "custom/arch": {
+      "format": "  ",
+      "tooltip": false,
+      "on-click": "~/dotfiles/wofi/sysmenu.sh"
+    },
+    "hyprland/window": {
+    	"format": "{class}",
+    	"tooltip": false
+    },
+    "hyprland/workspaces": {
+      "format": "{name}",
+      "tooltip": false,
+      "all-outputs": true,
+    },
+    "clock": {
+      "format": " {:%H:%M | %a %d.%m}",
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-muted": "",
+      "tooltip": false,
+      "format-icons": {
+        "headphone": "",
+        "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
+      },
+      "scroll-step": 1,
+      "on-click": "pavucontrol"
+    },
+    "tray": {
+    	"icon-size": 21,
+    	"spacing": 10
+    },
+    "custom/themes": {
+      "format": "  ",
+      "tooltip": false,
+      "on-click": "~/dotfiles/waybar/themeswitcher.sh"
+    }
+}
