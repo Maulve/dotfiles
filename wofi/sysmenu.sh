@@ -7,7 +7,7 @@ elif [[ $choice == "󰤄 Suspend" ]]; then
 elif [[ $choice == " Reboot" ]]; then
 	systemctl reboot
 elif [[ $choice == " Shutdown" ]]; then
-	systemctl shutdown
+	systemctl poweroff
 else
 	exit 1
 fi
