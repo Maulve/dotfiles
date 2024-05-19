@@ -5,17 +5,15 @@ packagesPacman=(
     "steam"
     "shotwell"
     "qbittorrent"
-    "code"
     "btop"
-    "obsidian"
+    "ghostwriter"
     "godot"
     "thunderbird"
     "bitwarden"
+    "libreoffice-fresh"
 )
 
 packagesYay=(
     "github-desktop-bin"
-    "onlyoffice-bin"
-    "vesktop-bin"
     "libresprite"
 )

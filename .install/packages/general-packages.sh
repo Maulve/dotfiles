@@ -3,18 +3,16 @@ packagesPacman=(
     "wget"
     "unzip"
     "pacman-contrib"
-    "nano"
+    "micro"
     "bluez" # bluetooth
     "bluez-utils" # bluetooth
-    "wget"
-    "unzip"
-    "alacritty" 
+    "kitty" 
     "firefox" 
-    "starship" # shell prompt
-    "thunar" 
-    "noto-fonts" 
-    "otf-font-awesome" 
-    "ttf-fira-sans" 
+    "powerlevel10k" # shell prompt
+    "thunar"
+    "noto-fonts"
+    "otf-font-awesome"
+    "ttf-fira-sans"
     "ttf-fira-code" 
     "ttf-firacode-nerd" 
     "figlet" # ascii art generator
@@ -51,10 +49,8 @@ packagesPacman=(
     "wayland"
     "wayland-protocols"
     "wayland-utils"
+    "wofi"
 );
 
 packagesYay=(
-    "xcursor-simp1e-catpuccin-mocha"
-    "pacseek" # terminal user interface for arch packages
-    "rofi-lbonn-wayland" # rofi fork with wayland support
-);
+    "pacseek" # terminal user interface for arch packages);

@@ -11,8 +11,7 @@ packagesPacman=(
 );
 
 packagesYay=(
-    "swww" 
-    "wlogout"
+    "swww" # wallpapers
     "nwg-look" # gtk3 settings
     "hyprshot" # https://github.com/Gustash/Hyprshot
 );
