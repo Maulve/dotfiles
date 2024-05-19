@@ -20,7 +20,7 @@ font-family:"Fira Code Semibold";
 
 #inner-box {
 margin: 5px;
-background-color: @background;
+background-color: transparent;
 }
 
 #outer-box {
