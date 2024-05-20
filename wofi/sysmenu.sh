@@ -1,4 +1,5 @@
-choice=$(printf "󰍃 Logout\n󰤄 Suspend\n Reboot\n Shutdown" | wofi --dmenu --style=$HOME/dotfiles/wofi/style-sys.css -p "SysMenu" --width 500 --height 300)
+options="󰍃 Logout\n󰤄 Suspend\n Reboot\n Shutdown"
+choice=$(printf "${options}" | wofi --dmenu --style=$HOME/dotfiles/wofi/style-sys.css -p "SysMenu" --width 500 --height 300)
 
 if [[ $choice == "󰍃 Logout" ]]; then
 	hyprctl dispatch exit
@@ -11,4 +12,3 @@ elif [[ $choice == " Shutdown" ]]; then
 else
 	exit 1
 fi
-
