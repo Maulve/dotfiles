@@ -2,11 +2,16 @@
   "layer": "top",
     "modules-left": ["custom/themes", "tray", "hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "clock", "custom/arch"],
+    "modules-right": ["pulseaudio", "clock", "custom/newworkspace", "custom/arch"],
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
       "on-click": "~/dotfiles/wofi/sysmenu.sh"
+    },
+    "custom/newworkspace": {
+    	"format": "󰧆",
+    	"tooltip": false,
+    	"on-click": "hyprctl dispatch workspace empty"
     },
     "hyprland/window": {
     	"format": "{class}",
