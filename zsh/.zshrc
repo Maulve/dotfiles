@@ -67,7 +67,7 @@ alias dot="cd ~/dotfiles"
 # custom commands
 alias bgm="/home/maulve/Applications/scripts/bgm/start.sh"
 alias mouselock="sudo /home/maulve/Applications/scripts/mouse-lock/start.sh"
-alias webui="cd "/home/maulve/stable-diffusion-webui" && source ./venv/bin/activate && ./webui.sh"
+alias webui="cd "/home/maulve/stable-diffusion-webui" && source ./venv/bin/activate && ./webui.sh --opt-sdp-attention --no-half-vae --medvram --upcast-sampling --opt-channelslast"
 alias comfy="/home/maulve/ComfyUI/venv/bin/python /home/maulve/ComfyUI/main.py --output-directory /home/maulve/ai/output/comfyui"
 alias fav="go run /home/maulve/Applications/scripts/fastfav/fastfav.go"
 alias update="~/update.sh"
