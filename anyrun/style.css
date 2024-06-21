@@ -1,0 +1,70 @@
+/* ############################################################################################################ */
+/* ##   ______  __      __  _______   ________  _______    ______   __    __   ______   __    __  ________   ## */
+/* ##  /      \|  \    /  \|       \ |        \|       \  /      \ |  \  |  \ /      \ |  \  /  \|        \  ## */
+/* ## |  $$$$$$\\$$\  /  $$| $$$$$$$\| $$$$$$$$| $$$$$$$\|  $$$$$$\| $$\ | $$|  $$$$$$\| $$ /  $$| $$$$$$$$  ## */
+/* ## | $$   \$$ \$$\/  $$ | $$__/ $$| $$__    | $$__| $$| $$___\$$| $$$\| $$| $$__| $$| $$/  $$ | $$__      ## */
+/* ## | $$        \$$  $$  | $$    $$| $$  \   | $$    $$ \$$    \ | $$$$\ $$| $$    $$| $$  $$  | $$  \     ## */
+/* ## | $$   __    \$$$$   | $$$$$$$\| $$$$$   | $$$$$$$\ _\$$$$$$\| $$\$$ $$| $$$$$$$$| $$$$$\  | $$$$$     ## */
+/* ## | $$__/  \   | $$    | $$__/ $$| $$_____ | $$  | $$|  \__| $$| $$ \$$$$| $$  | $$| $$ \$$\ | $$_____   ## */
+/* ##  \$$    $$   | $$    | $$    $$| $$     \| $$  | $$ \$$    $$| $$  \$$$| $$  | $$| $$  \$$\| $$     \  ## */
+/* ##   \$$$$$$     \$$     \$$$$$$$  \$$$$$$$$ \$$   \$$  \$$$$$$  \$$   \$$ \$$   \$$ \$$   \$$ \$$$$$$$$  ## */
+/* ##                                                                                                        ## */
+/* ## Anyrun Style (Catppuccin Mocha)                                                                        ## */
+/* ## Created by Cybersnake                                                                                  ## */
+/* ############################################################################################################ */
+
+@define-color select #AA94EA;
+@define-color bg #030508;
+
+* {
+    all: unset;
+    font-size: 1rem;
+    font-family: Fira Code;
+  }
+
+#window {
+	background: transparent;
+}
+
+#entry,
+#main { 
+  background: @bg;
+}
+
+#match {
+	font-weight: 500;
+}
+  
+#match.activatable {
+  border-radius: 7px;
+  padding: 3px 3px;
+  margin-top: 1px;
+}
+#match.activatable:first-child { margin-top: 9px; }
+#match.activatable:last-child { margin-bottom: 1px; }
+
+#match:selected {
+  color: #000000;
+  background: @select;
+  border-radius: 7px;
+}
+
+#entry {
+  border-radius: 7px;
+  margin: 3px;
+  padding: 5px 5px;
+  caret-color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+box#main {
+  border-color: @select;
+  color: white;
+  border-width: 4px;
+  border-style: solid;
+  margin-top: 15px;
+  background-color: @bg;
+  border-radius: 7px;
+  padding: 5px;
+}

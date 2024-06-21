@@ -1,5 +1,5 @@
 options="󰍃 Logout\n󰤄 Suspend\n Reboot\n Shutdown"
-choice=$(printf "${options}" | fuzzel --dmenu)
+choice=$(printf "${options}" | anyrun --plugins libstdin.so --show-results-immediately true)
 
 if [[ $choice == "󰍃 Logout" ]]; then
 	hyprctl dispatch exit

@@ -35,7 +35,7 @@ choice=$(ls ~/dotfiles/waybar/themes | wofi --dmenu -p "Themes")
 # Set new theme by writing the theme information to ~/.cache/.themestyle.sh
 # ----------------------------------------------------- 
 if [ "$choice" ]; then
-    echo "Loading waybar theme..."
-    echo "${list[$choice]}" > ~/.cache/.themestyle.sh
+    echo "Loading waybar theme \"$choice\"..."
+    echo "${choice}" > ~/.cache/.themestyle.sh
     ~/dotfiles/waybar/launch.sh
 fi

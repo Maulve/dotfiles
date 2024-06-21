@@ -46,7 +46,7 @@ case $1 in
         fi
 		#selected=$(ls -p ~/wallpapers | grep -v / | rofi -dmenu -replace -i -config ~/dotfiles/rofi/config-wallpaper.rasi)
         
-        wal -q -i ~/wallpaper/$selected
+       # wal -q -i ~/wallpaper/$selected
     ;;
 
     # Randomly select wallpaper 
@@ -58,8 +58,8 @@ esac
 # ----------------------------------------------------- 
 # Load current pywal color scheme
 # ----------------------------------------------------- 
-source "$HOME/.cache/wal/colors.sh"
-echo ":: Wallpaper: $wallpaper"
+#source "$HOME/.cache/wal/colors.sh"
+#echo ":: Wallpaper: $wallpaper"
 
 # ----------------------------------------------------- 
 # get wallpaper image name

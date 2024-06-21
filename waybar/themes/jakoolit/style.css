@@ -1,0 +1,113 @@
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+*{
+font-family: "Fira Code";
+font-weight: bold;
+min-height: 0;
+font-size: 16;
+font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+@import './colors-waybar.css';
+
+#waybar.empty, #waybar.tiled, #waybar.floating {
+	background-color: transparent;
+}
+
+window#waybar,
+window#waybar.empty,
+window#waybar.empty #window {
+    background-color: transparent;
+    padding: 0px;
+    border: 0px;
+}
+
+tooltip {
+	color: @color15;
+	background: @background;
+	opacity: 0.8;
+}
+
+/*-----module groups----*/
+.modules-right {
+	background-color: @background;
+	border-radius: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+.modules-center {
+	background-color: @background;
+	border-radius: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+.modules-left {
+	background-color: @background;
+	border-radius: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+/*-----modules indv----*/
+
+#workspaces button {
+    color: @workspaces-active-bg;
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.2s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.active {
+    color: @workspaces-active-text;
+    background-color: @workspaces-active-bg;
+    padding-left: 8px;
+    padding-right: 8px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.2s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button:hover {
+	color: @workspaces-active-text;
+	background-color: #ffffff;
+}
+
+#clock,
+#cpu,
+#disk,
+/*#idle_inhibitor,*/
+#memory,
+#network,
+#temperature,
+#tray,
+#window,
+#wireplumber,
+#workspaces,
+#custom-sysmenu {
+	color: @color12;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 6px;
+	padding-left: 6px;;
+}
+
+#custom-sysmenu {
+	font-size: 20;
+}
+
+/*-----Indicators----*/
+#idle_inhibitor.activated {
+	color: #2dcc36;
+}
+
+#temperature.critical {
+    background-color: #ff0000;
+}

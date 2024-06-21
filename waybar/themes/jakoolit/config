@@ -1,0 +1,33 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+
+// ### DEFAULT v3  - Top ### //
+{
+"include": "~/dotfiles/waybar/themes/jakoolit/modules",
+"layer": "top",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"margin-top": 3,
+"margin-left": 8,
+"margin-right": 8,
+
+"modules-left": [
+	"group/mobo_drawer",
+	"custom/separator#blank",
+	"network#speed",
+	"tray",
+	],
+
+"modules-center": [
+	"hyprland/workspaces#rw",
+	], 
+
+"modules-right": [
+	"group/audio",
+	"custom/separator#dot-line",
+	"clock#5",
+	"custom/sysmenu",
+	],
+}
