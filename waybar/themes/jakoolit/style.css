@@ -103,6 +103,37 @@ tooltip {
 	font-size: 20;
 }
 
+#custom-sysmenu {
+	padding-right: 16px;
+}
+
+/* custom colors */
+
+#network {
+	color: #4EB183;
+}
+
+#cpu, #temperature {
+	color: #B1844E;
+}
+
+#memory {
+	color: #B0A34D;
+}
+
+#disk {
+	color: #8B6A46;
+}
+
+#wireplumber {
+	color: #57BFCE;
+}
+
+#clock {
+	color: #A584C4;
+}
+
+
 /*-----Indicators----*/
 #idle_inhibitor.activated {
 	color: #2dcc36;

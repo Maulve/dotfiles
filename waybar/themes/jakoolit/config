@@ -18,6 +18,7 @@
 	"custom/separator#blank",
 	"network#speed",
 	"tray",
+	"hyprland/window",
 	],
 
 "modules-center": [
@@ -26,7 +27,7 @@
 
 "modules-right": [
 	"group/audio",
-	"custom/separator#dot-line",
+	"custom/separator#blank",
 	"clock#5",
 	"custom/sysmenu",
 	],

@@ -39,26 +39,31 @@
 	"window-rewrite-default": " ",
 	"window-rewrite": {
 		"title<.*youtube.*>": " ",
-		"title<.*amazon.*>": " ",
 		"title<.*reddit.*>": " ",
-		"title<.*Picture-in-Picture.*>": " ",
 		"class<firefox>": " ",
 		"class<kitty>": " ",
 		"class<konsole>": " ",
 		"class<thunar>": "󰝰 ",
+		"title<.*discord.*": " ", 
 		"class<discord>": " ",
 		"class<WebCord>": " ",
-		"class<subl>": "󰅳 ",
-		"class<celluloid>": " ",
-		"class<Cider>": "󰎆 ",
 		"class<code-oss>": "󰨞 ",
 		"class<codium|codium-url-handler|VSCodium>": "󰨞 ",
-		"class<codeblocks>": "󰅩 ",
-		"class<mousepad>": " ",
 		"class<libreoffice-writer>": " ",
 		"class<libreoffice-startcenter>": "󰏆 ",
-		"class<com.obsproject.Studio>": " "
-		}   
+		"class<com.obsproject.Studio>": " ",
+		"title<.*minecraft.*>": "󰍳",
+		"class<org.prismlauncher.PrismLauncher>": "󰍳",
+		"title<.*bgm.*>": "󰎇",
+		"class<fl64.exe>": "󱨎",
+		"class<steam>": "",
+		"title<Geometry Dash>": "",
+		"class<krita>": "",
+		"class<org.keepassxc.KeePassXC": "",
+		"class<jetbrains-idea-ce>": "",
+		"class<org.godotengine.*>": "",
+		"class<org.kde.kdenlive>": ""
+		}
 },
 // GROUP
 "group/motherboard": {
@@ -116,8 +121,7 @@
 },
 "clock": {
 	"interval": 1,
-    //"format": " {:%I:%M %p}", // AM PM format
-    "format": " {:%H:%M:%S}", // 24H
+    "format": " {:%H:%M:%S}",
 	"format-alt": " {:%H:%M   %Y, %d %B, %A}",
 	"tooltip-format": "<tt><small>{calendar}</small></tt>",
 	"calendar": {
@@ -154,14 +158,12 @@
 },
 "clock#4": {
 	"interval": 60,
-    //"format": "{:%B | %a %d, %Y | %I:%M %p}", // AM PM format
-    "format": "{:%B | %a %d, %Y | %H:%M}", // 24H
+    "format": "{:%B | %a %d, %Y | %H:%M}",
 	"format-alt": "{:%a %b %d, %G}",
 	"tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
 },
 "clock#5": {
-    //"format": "{:%A, %I:%M %P}", // AM PM format
-    "format": "{:%H:%M | %a %d.%m.%y }", // 24H
+    "format": "{:%H:%M | %a %d.%m.%y }",
 	"format-alt": "{:%A, %d %B, %Y (%R)}"
 },
 "cpu": {
@@ -194,16 +196,11 @@
 },
 "hyprland/window": {
 	"format": "{class}",
+	"format-alt": "{title}",
 	"max-length": 20,
 	"separate-outputs": true,
 	"offscreen-css": true,
 	"offscreen-css-text": "(inactive)",
-	"rewrite": {
-		"(.*) — Mozilla Firefox": " $1",
-		"(.*) - fish": "> [$1]",
-		"(.*) - zsh": "> [$1]",
-		"(.*) - $term": "> [$1]",
-	},
 },
 "idle_inhibitor": {
 	"format": "{icon}",
@@ -274,7 +271,7 @@
 	],
 },
 "custom/sysmenu": {
-	"format": "",
+	"format": "󰣇",
 	"on-click": "~/dotfiles/fuzzel/sysmenu.sh",
 	"tooltip": true,
 	"tooltip-format": "󰷛 Screen Lock",
